@@ -22,9 +22,10 @@
     margin-bottom: 10px;
     display: flex;
 }
-#menu{
+#menu {
     margin-top: 100px;
-    margin-left: 50px;
+    margin-left: 150px;
+    font-size: 20px;
 }
 #accueil {
     margin-right: 135px;
@@ -81,7 +82,7 @@ body{
     margin-right: 100px;
 }
 .nav-link:hover{
-    color: white;
+    background-color: #ffffff8c;
 }
 html{
     height: 100%;

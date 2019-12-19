@@ -14,7 +14,6 @@
     margin-bottom: 20px;
     height: 220.34px;
     width: 253.50px;
-    
 }
 
 #header {
@@ -22,9 +21,10 @@
     margin-bottom: 10px;
     display: flex;
 }
-#menu{
+#menu {
     margin-top: 100px;
-    margin-left: 50px;
+    margin-left: 150px;
+    font-size: 20px;
 }
 #accueil {
     margin-right: 135px;
@@ -73,7 +73,7 @@
     margin-left: 120px;
 }
 body{
-    background-image: url(../CampusContest/images/spaceX.jpg);
+    background-image: url(../campus-contest/images/spaceX.jpg);
     background-size: 100%;
 }
 .nav-link {
@@ -81,7 +81,7 @@ body{
     margin-right: 100px;
 }
 .nav-link:hover{
-    color: white;
+    background-color: #ffffff8c;
 }
 html{
     height: 100%;
