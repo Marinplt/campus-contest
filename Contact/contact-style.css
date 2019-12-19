@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.ubuntu {
+    font-family: 'Ubuntu', serif;
+}
+
+#logo {
+    display: block;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    height: 220.34px;
+    width: 253.50px;
+    
+}
+
+#header {
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+}
+#menu{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+#accueil {
+    margin-right: 135px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#exp-et-diplomes {
+    margin-right: 135px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#parcours {
+    margin-right: 135px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#competences {
+    margin-right: 135px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#contact {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#footer{
+    height: 200px;
+}
+#logofooter{
+    width: 99px;
+    height: 77px;
+    margin-top: 60px;
+    float: right;
+    margin-right: 50px;
+}
+#linkedin{
+    width: 99px;
+    height: 99px;
+    margin-top: 60px;
+    margin-left: 120px;
+}
+body{
+    background-image: url(../images/spaceX.jpg);
+    background-size: 100%;
+}
+.nav-link {
+    color: white;
+    margin-right: 100px;
+}
+.nav-link:hover{
+    color: white;
+}
+html{
+    height: 100%;
+}
