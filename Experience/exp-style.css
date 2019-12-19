@@ -14,7 +14,6 @@
     margin-bottom: 20px;
     height: 220.34px;
     width: 253.50px;
-    
 }
 
 #header {
@@ -22,10 +21,13 @@
     margin-bottom: 10px;
     display: flex;
 }
-#menu{
+
+#menu {
     margin-top: 100px;
-    margin-left: 50px;
+    margin-left: 150px;
+    font-size: 20px;
 }
+
 #accueil {
     margin-right: 135px;
     text-decoration: none;
@@ -55,40 +57,55 @@
     color: rgb(0, 0, 0);
 }
 
-#footer{
+#footer {
     height: 200px;
     background: linear-gradient(#ffffff00, #0d1244);
 }
-#logofooter{
+
+#logofooter {
     width: 99px;
     height: 77px;
     margin-top: 60px;
     float: right;
     margin-right: 50px;
 }
-#linkedin{
+
+#linkedin {
     width: 99px;
     height: 99px;
     margin-top: 60px;
     margin-left: 120px;
 }
-body{
+
+body {
     background-image: url(../images/spaceX.jpg);
     background-size: 100%;
 }
+
 .nav-link {
     color: white;
     margin-right: 100px;
 }
 .nav-link:hover{
-    color: white;
+    background-color: #ffffff8c;
 }
-html{
+html {
     height: 100%;
 }
-.accordion{
+
+.accordion {
     margin-left: 350px;
     margin-right: 200px;
     color: teal;
-    
+}
+.text-info{
+    font-size: 30px!important;
+}
+h3{
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: #000000;
+    text-decoration: none!important;
+    color: rgb(255, 251, 0)!important;
 }
