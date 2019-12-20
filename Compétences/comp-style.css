@@ -14,7 +14,6 @@
     margin-bottom: 20px;
     height: 220.34px;
     width: 253.50px;
-    
 }
 
 #header {
@@ -26,34 +25,6 @@
     margin-top: 100px;
     margin-left: 150px;
     font-size: 20px;
-}
-#accueil {
-    margin-right: 135px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-#exp-et-diplomes {
-    margin-right: 135px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-#parcours {
-    margin-right: 135px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-#competences {
-    margin-right: 135px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-#contact {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
 }
 
 #footer {
