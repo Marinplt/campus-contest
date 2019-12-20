@@ -56,8 +56,9 @@
     color: rgb(0, 0, 0);
 }
 
-#footer{
+#footer {
     height: 200px;
+    background: linear-gradient(#ffffff00, #0d1244);
 }
 #logofooter{
     width: 99px;
