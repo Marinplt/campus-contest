@@ -92,20 +92,7 @@ body {
 html {
     height: 100%;
 }
-
-.accordion {
-    margin-left: 350px;
-    margin-right: 200px;
-    color: teal;
-}
-.text-info{
-    font-size: 30px!important;
-}
-h3{
-    font-size: 20px;
-}
-.btn:hover{
-    background-color: #000000;
-    text-decoration: none!important;
-    color: rgb(255, 251, 0)!important;
+.list-group{
+    margin-left: 370px;
+    margin-right: 500px;
 }
