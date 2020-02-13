@@ -45,13 +45,45 @@
             </ul>
         </div>
     </div>
-    <div id="competences">
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-transparent text-info border-bottom border-warning mb-2">Compétence 1</li>
-            <li class="list-group-item bg-transparent text-info border-bottom border-warning mb-2">Compétence 2</li>
-            <li class="list-group-item bg-transparent text-info border-bottom border-warning mb-2">Compétence 3</li>
-            <li class="list-group-item bg-transparent text-info border-bottom border-warning mb-2">Compétence 4</li>
-        </ul>
+    <div id="competences" class="row">
+        <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active bg-transparent text-white" id="list-home-list" data-toggle="list"
+                    href="#list-home" role="tab" aria-controls="home">Languages (parlés et informatique)</a>
+                <a class="list-group-item list-group-item-action bg-transparent text-white" id="list-profile-list" data-toggle="list"
+                    href="#list-profile" role="tab" aria-controls="profile">Divers</a>
+                <a class="list-group-item list-group-item-action bg-transparent text-white" id="list-messages-list" data-toggle="list"
+                    href="#list-messages" role="tab" aria-controls="messages">Sports pratiqués</a>
+                <a class="list-group-item list-group-item-action bg-transparent text-white" id="list-settings-list" data-toggle="list"
+                    href="#list-settings" role="tab" aria-controls="settings">Centres d'inérêts</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    -Anglais <br>
+                    -Espagnol <br>
+                    -HTML, CSS, PHP <br>
+                    -JavaScript <br>
+                    -SQL <br>
+                    -C, C++
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    -Montage/démontage d'ordinateurs fixes <br>
+                    -Photoshop <br>
+                    -Powerpoint
+                </div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    -Tir à l'arc <br>
+                    -Golf
+                </div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                    -Cinéma <br>
+                    -Nouvelles technologies <br>
+                    -Robotique
+                </div>
+            </div>
+        </div>
     </div>
     <div id="footer" class="fixed-bottom">
         <a href="../Accueil.html">
@@ -59,9 +91,6 @@
         </a>
         <a href="https://www.linkedin.com/in/marin-pollet-30b89b196">
             <img id="linkedin" src="../images/linkedin.png" alt="Logo Linkedin">
-        </a>
-        <a href="https://github.com/Marinplt">
-            <img id="logogit" src="../images/logo github.png" alt="Logo github">
         </a>
     </div>
 </body>

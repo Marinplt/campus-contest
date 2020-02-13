@@ -14,7 +14,6 @@
     margin-bottom: 20px;
     height: 220.34px;
     width: 253.50px;
-    
 }
 
 #header {
@@ -22,40 +21,47 @@
     margin-bottom: 10px;
     display: flex;
 }
+
 #menu {
     margin-top: 100px;
     margin-left: 150px;
     font-size: 20px;
 }
 
-#footer{
+#footer {
     height: 200px;
-    background: linear-gradient(#ffffff00, #0d1244);
 }
-#logofooter{
+
+#logofooter {
     width: 99px;
     height: 77px;
     margin-top: 60px;
     float: right;
     margin-right: 50px;
 }
-#linkedin{
+
+#linkedin {
     width: 99px;
     height: 99px;
     margin-top: 60px;
     margin-left: 120px;
 }
-body{
-    background-image: url(../images/spaceX.jpg);
+
+body {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     background-size: 100%;
 }
+
 .nav-link {
-    color: white;
+    color: #d0ecff;
     margin-right: 100px;
+    border-bottom: 1px solid white;
 }
-.nav-link:hover{
-    background-color: #ffffff8c;
+
+.nav-link:hover {
+    color: rgb(255, 251, 0);
 }
-html{
+
+html {
     height: 100%;
 }
