@@ -67,27 +67,7 @@ html {
     height: 100%;
 }
 
-#mail {
-    margin-left: 370px;
-    margin-right: 800px;
-}
-#logogit{
-    width: 200px;
-    height: 180.68px;
-    float: right;
-    position: relative;
-    top: -300px;
-    left: -300px;
-}
-
-#exampleInputEmail1 {
-    width: 30%!important;
-}
-
-#exampleInputPassword1 {
-    width: 40%!important;
-}
-
-#envoyer {
-    background-color: #303036;
+#carouselExampleCaptions{
+    border-top: 2px solid #30cfd0;
+    border-bottom: 2px solid #303036;
 }
