@@ -67,27 +67,9 @@ html {
     height: 100%;
 }
 
-#mail {
-    margin-left: 370px;
-    margin-right: 800px;
+#remerciements{
+    text-align: center;
 }
-#logogit{
-    width: 200px;
-    height: 180.68px;
-    float: right;
-    position: relative;
-    top: -300px;
-    left: -300px;
-}
-
-#exampleInputEmail1 {
-    width: 30%!important;
-}
-
-#envoyer {
+#bouton_accueil{
     background-color: #303036;
-    padding: .5rem 1rem;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    text-decoration: none;
 }
