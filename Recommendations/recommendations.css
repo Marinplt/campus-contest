@@ -26,7 +26,6 @@
     margin-top: 100px;
     margin-left: 150px;
     font-size: 20px;
-    
 }
 
 #footer {
@@ -48,6 +47,13 @@
     margin-left: 120px;
 }
 
+#campusacademy {
+    width: 99px;
+    height: 99px;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
 body {
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     background-size: 100%;
@@ -67,7 +73,7 @@ html {
     height: 100%;
 }
 
-#carouselExampleCaptions{
+#carouselExampleCaptions {
     border-top: 2px solid #30cfd0;
     border-bottom: 2px solid #303036;
 }

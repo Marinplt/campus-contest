@@ -46,7 +46,12 @@
     margin-top: 60px;
     margin-left: 120px;
 }
-
+#campusacademy{
+    width: 99px;
+    height: 99px;
+    margin-top: 60px;
+    margin-left: 80px;
+}
 body {
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     background-size: 100%;
