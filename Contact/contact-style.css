@@ -87,14 +87,27 @@ html {
     left: -300px;
 }
 
-#exampleInputEmail1 {
-    width: 30%!important;
-}
-
 #envoyer {
+    color: white !important;
     background-color: #303036;
     padding: .5rem 1rem;
     border: 1px solid transparent;
     border-radius: .25rem;
     text-decoration: none;
+}
+
+#message {
+    resize: none;
+}
+
+.formulaire {
+    border-radius: 0.25rem;
+}
+
+#nom {
+    margin-left: -4px;
+}
+
+#email {
+    margin-left: -4px;
 }

@@ -41,24 +41,19 @@
             </ul>
         </div>
     </div>
-    <form id="mail">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="row mb-3">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Full name" name="name">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
-        </div>
-        <a id="envoyer" href="Remerciements/remerciements.html" class="text-white">
-            Send
-        </a>
+    <form method="post" id="mail">
+        <p>
+            <label for="prenom"></label>
+            <input class="formulaire" type="text" name="Name" id="nom" placeholder="Nom" autofocus required />
+        </p>
+        <p>
+            <label for="email"></label>
+            <input class="formulaire" type="email" name="Email" id="email" placeholder="Email" autofocus required />
+        </p>
+        <p>
+            <textarea class="formulaire" id="message" name="Message" placeholder="Message" rows="5" cols="50" autofocus required></textarea>
+        </p>
+        <input type="submit" value="Envoyer" id="envoyer">
     </form>
 
     <a href="https://github.com/Marinplt">
@@ -77,24 +72,24 @@
     </div>
 
     <?php
-
     //connexion a la base de données
+
     try {
         $bdd = new PDO('mysql:host=localhost;dbname=id12614685_contact;charset=utf8', 'id12614685_marin', '123456');
-        /* $bdd = new PDO('mysql:host=localhost;dbname=contact;charset=utf8', 'root', ''); */
+        // $bdd = new PDO('mysql:host=localhost;dbname=contact;charset=utf8', 'root', ''); UTILISE POUR LE LOCAL
     } catch (Exception $e) {
         die('Erreur : ' . $e->getMessage());
     }
 
     if ($_POST) {
-        $Name = $_POST['name'];
-        $Email = $_POST['email'];
-        $Message = $_POST['message'];
+        $Name = $_POST['Name'];
+        $Email = $_POST['Email'];
+        $Message = $_POST['Message'];
 
         //verification si une valeur n'est pas vide
         if (!empty($Name) and !empty($Email) and !empty($Message)) {
             //envoie des valeur dans la BDD
-            $bdd->query('INSERT INTO Formulaire (Nom, Email, Message) VALUES("' . $Name . '", "' . $Email . '", "' . $Message . '")') or die('Erreur: ' . mysql_error());
+            $bdd->query('INSERT INTO formulaire (email, name, message) VALUES("' . $Name . '", "' . $Email . '", "' . $Message . '")') or die('Erreur:');
             $pop = 'Votre formulaire a bien été envoyé';
             echo '<script type="text/javascript">window.alert("' . $pop . '");</script>';
         }
