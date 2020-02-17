@@ -36,7 +36,7 @@
                     <a class="nav-link" href="../Contact/contact.php">Contact</a>
                 </li>
                 <li id="avis" class="nav-item">
-                    <a class="nav-link" href="../Recommendations/recommendations.html">Recommendations</a>
+                    <a class="nav-link" href="../Recommendations/recommendations.php">Recommendations</a>
                 </li>
             </ul>
         </div>
@@ -67,7 +67,7 @@
             <img id="campusacademy" src="../images/LOGO_CAMPUS_ACADEMY.png" alt="Logo Campus Academy">
         </a>
         <a href="https://github.com/Marinplt">
-        <img id="logogit" src="../images/logo github.png" alt="Logo Github">
+            <img id="logogit" src="../images/logo github.png" alt="Logo Github">
         </a>
     </div>
 
