@@ -43,7 +43,7 @@
                     <a class="nav-link" href="../Contact/contact.php">Contact</a>
                 </li>
                 <li id="avis" class="nav-item">
-                    <a class="nav-link" href="../Recommendations/recommendations.html">Recommendations</a>
+                    <a class="nav-link" href="../Recommendations/recommendations.php">Recommendations</a>
                 </li>
             </ul>
         </div>
@@ -58,22 +58,22 @@
             <div class="carousel-item active">
                 <img src="../images/abstract_grey.jpg" class="d-block w-100" alt="fond abstrait gris">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Première entreprise</h5>
-                    <p>Avis laissé par une entreprise sur moi ou mon travail.</p>
+                    <h5><?php echo$reponse['name']; ?></h5>
+                    <p><?php echo$reponse['message']; ?></p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="../images/abstract.jpg" class="d-block w-100" alt="fond abstrait gris & jaune">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Personne avec qui j'ai travaillé</h5>
-                    <p>Avis laissé par un internaute sur moi ou mon travail.</p>
+                    <h5><?php echo$reponse['name']; ?></h5>
+                    <p><?php echo$reponse['message']; ?></p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="../images/abstract_yellow.jpg" class="d-block w-100" alt="fond abstrait jaune">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Personnes pour qui j'ai réalisé un projet</h5>
-                    <p>Avis laissé par la personne pour laquelle j'ai réalisé un projet.</p>
+                    <h5><?php echo$reponse['name']; ?></h5>
+                    <p><?php echo$reponse['message']; ?></p>
                 </div>
             </div>
         </div>
@@ -97,6 +97,20 @@
             <img id="campusacademy" src="../images/LOGO_CAMPUS_ACADEMY.png" alt="Logo Campus Academy">
         </a>
     </div>
+    <?php
+        try
+        {
+            $bdd = new PDO('mysql:host=localhost;dbname=id12614685_contact;charset=utf8', 'id12614685_marin', '123456');
+        }
+        catch(Exception $e)
+        {
+                die('Erreur : '.$e->getMessage());
+        }
+        
+        $reponse = $bdd->query('SELECT message, name FROM formulaire LIMIT 0, 3');
+
+        $reponse->closeCursor();
+    ?>
 </body>
 
 </html>

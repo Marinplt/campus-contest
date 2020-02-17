@@ -54,6 +54,13 @@
     margin-left: 80px;
 }
 
+#logogit {
+    width: 99px;
+    height: 99px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
 body {
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     background-size: 100%;
@@ -76,15 +83,6 @@ html {
 #mail {
     margin-left: 370px;
     margin-right: 800px;
-}
-
-#logogit {
-    width: 200px;
-    height: 180.68px;
-    float: right;
-    position: relative;
-    top: -300px;
-    left: -300px;
 }
 
 #envoyer {

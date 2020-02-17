@@ -56,9 +56,6 @@
         <input type="submit" value="Envoyer" id="envoyer">
     </form>
 
-    <a href="https://github.com/Marinplt">
-        <img id="logogit" src="../images/logo github.png" alt="Logo Github">
-    </a>
     <div id="footer" class="fixed-bottom">
         <a href="../index.html">
             <img id="logofooter" src="../images/logo M blanc.png" alt="Logo M Marin Pollet">
@@ -68,6 +65,9 @@
         </a>
         <a href="https://www.campus.academy/">
             <img id="campusacademy" src="../images/LOGO_CAMPUS_ACADEMY.png" alt="Logo Campus Academy">
+        </a>
+        <a href="https://github.com/Marinplt">
+        <img id="logogit" src="../images/logo github.png" alt="Logo Github">
         </a>
     </div>
 
@@ -89,7 +89,7 @@
         //verification si une valeur n'est pas vide
         if (!empty($Name) and !empty($Email) and !empty($Message)) {
             //envoie des valeur dans la BDD
-            $bdd->query('INSERT INTO formulaire (email, name, message) VALUES("' . $Name . '", "' . $Email . '", "' . $Message . '")') or die('Erreur:');
+            $bdd->query('INSERT INTO formulaire (name, email, message) VALUES("' . $Name . '", "' . $Email . '", "' . $Message . '")') or die('Erreur:');
             $pop = 'Votre formulaire a bien été envoyé';
             echo '<script type="text/javascript">window.alert("' . $pop . '");</script>';
         }
