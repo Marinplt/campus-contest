@@ -56,24 +56,24 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../images/abstract_grey.jpg" class="d-block w-100" alt="fond abstrait gris">
+                <img src="../images/space1.jpg" class="d-block w-100" alt="fond abstrait gris">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5><?php echo $reponse['name']; ?></h5>
-                    <p><?php echo $reponse['message']; ?></p>
+                    <h5><?php name1(); ?></h5>
+                    <p><?php message1(); ?></p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../images/abstract.jpg" class="d-block w-100" alt="fond abstrait gris & jaune">
+                <img src="../images/space2.jpg" class="d-block w-100" alt="fond abstrait gris & jaune">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5><?php echo $reponse['name']; ?></h5>
-                    <p><?php echo $reponse['message']; ?></p>
+                    <h5><?php name2(); ?></h5>
+                    <p><?php message2(); ?></p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../images/abstract_yellow.jpg" class="d-block w-100" alt="fond abstrait jaune">
+                <img src="../images/space3.jpg" class="d-block w-100" alt="fond abstrait jaune">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5><?php echo $reponse['name']; ?></h5>
-                    <p><?php echo $reponse['message']; ?></p>
+                    <h5><?php name3(); ?></h5>
+                    <p><?php message3(); ?></p>
                 </div>
             </div>
         </div>
@@ -98,17 +98,108 @@
         </a>
     </div>
     <?php
-        try
-        {
-            $bdd = new PDO('mysql:host=localhost;dbname=id12614685_contact;charset=utf8', 'id12614685_marin', '123456');
-        }
-        catch(Exception $e)
-        {
-                die('Erreur : '.$e->getMessage());
-        }
-        $reponse = $bdd->query('SELECT name, message FROM formulaire LIMIT 0, 3');
+        function name1(){ 
+            try
+            {
+                $bdd = new PDO('mysql:host=localhost;dbname=id12614685_contact;charset=utf8', 'id12614685_marin', '123456');
+            }
+            catch(Exception $e)
+            {
+                    die('Erreur : '.$e->getMessage());
+            }
+            $reponse = $bdd->query('SELECT name FROM formulaire');
+            
+            $donnees = $reponse->fetch();
 
-        $reponse->closeCursor();
+            echo$donnees['name'];
+            
+            $reponse->closeCursor();
+        }
+        function name2(){ 
+            try
+            {
+                $bdd = new PDO('mysql:host=localhost;dbname=id12614685_contact;charset=utf8', 'id12614685_marin', '123456');
+            }
+            catch(Exception $e)
+            {
+                    die('Erreur : '.$e->getMessage());
+            }
+            $reponse = $bdd->query('SELECT name, id FROM formulaire WHERE id = 2');
+            
+            $donnees = $reponse->fetch();
+
+            echo$donnees['name'];
+        
+            $reponse->closeCursor();
+        }
+        function name3(){ 
+            try
+            {
+                $bdd = new PDO('mysql:host=localhost;dbname=id12614685_contact;charset=utf8', 'id12614685_marin', '123456');
+            }
+            catch(Exception $e)
+            {
+                    die('Erreur : '.$e->getMessage());
+            }
+            $reponse = $bdd->query('SELECT name, id FROM formulaire WHERE id = 3');
+            
+            $donnees = $reponse->fetch();
+
+            echo$donnees['name'];
+
+            $reponse->closeCursor();
+        }
+        function message1(){
+            try
+            {
+                $bdd = new PDO('mysql:host=localhost;dbname=id12614685_contact;charset=utf8', 'id12614685_marin', '123456');
+            }
+            catch(Exception $e)
+            {
+                    die('Erreur : '.$e->getMessage());
+            }
+            $reponse = $bdd->query('SELECT message FROM formulaire');
+
+            $donnees = $reponse->fetch();
+
+            echo$donnees['message'];
+
+            $reponse->closeCursor();
+        }
+        function message2(){
+            try
+            {
+                $bdd = new PDO('mysql:host=localhost;dbname=id12614685_contact;charset=utf8', 'id12614685_marin', '123456');
+            }
+            catch(Exception $e)
+            {
+                    die('Erreur : '.$e->getMessage());
+            }
+            $reponse = $bdd->query('SELECT message, id FROM formulaire WHERE id = 2');
+
+            $donnees = $reponse->fetch();
+
+            echo$donnees['message'];
+
+            $reponse->closeCursor();
+        }
+        function message3(){
+            try
+            {
+                $bdd = new PDO('mysql:host=localhost;dbname=id12614685_contact;charset=utf8', 'id12614685_marin', '123456');
+            }
+            catch(Exception $e)
+            {
+                    die('Erreur : '.$e->getMessage());
+            }
+            $reponse = $bdd->query('SELECT message, id FROM formulaire WHERE id = 3');
+
+            $donnees = $reponse->fetch();
+
+            echo$donnees['message'];
+
+            $reponse->closeCursor();
+        }
     ?>
 </body>
 

@@ -36,7 +36,7 @@
                     <a class="nav-link" href="../Contact/contact.php">Contact</a>
                 </li>
                 <li id="avis" class="nav-item">
-                    <a class="nav-link" href="../Recommendations/recommendations.php">Recommendations</a>
+                    <a class="nav-link" href="../Recommandations/recommandations.php">Recommandations</a>
                 </li>
             </ul>
         </div>
@@ -90,7 +90,9 @@
         if (!empty($Name) and !empty($Email) and !empty($Message)) {
             //envoie des valeur dans la BDD
             $bdd->query('INSERT INTO formulaire (name, email, message) VALUES("' . $Name . '", "' . $Email . '", "' . $Message . '")') or die('Erreur:');
-            $pop = 'Votre formulaire a bien été envoyé';
+            $pop = "Merci pour votre avis ! \n
+            Votre message risque d'être affiché dans la page Recommandation. \n
+            Si vous ne voulez pas être affiché contactez moi via mon mail : marinplt@gmail.com" ;
             echo '<script type="text/javascript">window.alert("' . $pop . '");</script>';
         }
         //si un valeur est vide envoie d'une erreur
