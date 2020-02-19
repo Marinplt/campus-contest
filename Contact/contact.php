@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="contact-style.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/37dedd31fc.js" crossorigin="anonymous"></script>
     <link rel="icon" href="../logo-marin.ico">
     <title>Contact</title>
 </head>
@@ -44,16 +45,20 @@
     <form method="post" id="mail">
         <p>
             <label for="prenom"></label>
-            <input class="formulaire" type="text" name="Name" id="nom" placeholder="Nom" autofocus required />
+            <input class="formulaire" type="text" name="Name" id="nom" placeholder="Nom et Prénom" autofocus required />
         </p>
         <p>
             <label for="email"></label>
-            <input class="formulaire" type="email" name="Email" id="email" placeholder="Email" autofocus required />
+            <input class="formulaire" type="email" name="Email" id="email" placeholder="Adresse email" autofocus required />
         </p>
         <p>
-            <textarea class="formulaire" id="message" name="Message" placeholder="Message" rows="5" cols="50" autofocus required></textarea>
+            <textarea class="formulaire" id="message" name="Message" placeholder="Message" rows="5" cols="70" autofocus required></textarea>
         </p>
         <input type="submit" value="Envoyer" id="envoyer">
+        <p class="ubuntu mt-3">Téléchargez mon cv ici : </p>
+        <a id="cv_download" href="../Documents/CV_POLLET.pdf" download="CV Pollet Marin">
+            <img id="cv_image" src="../images/download-logo.png" alt="logo download">
+        </a>
     </form>
 
     <div id="footer" class="fixed-bottom">
@@ -92,7 +97,7 @@
             $bdd->query('INSERT INTO formulaire (name, email, message) VALUES("' . $Name . '", "' . $Email . '", "' . $Message . '")') or die('Erreur:');
             $pop = "Merci pour votre avis ! \n
             Votre message risque d'être affiché dans la page Recommandation. \n
-            Si vous ne voulez pas être affiché contactez moi via mon mail : marinplt@gmail.com" ;
+            Si vous ne voulez pas être affiché contactez moi via mon mail : marinplt@gmail.com";
             echo '<script type="text/javascript">window.alert("' . $pop . '");</script>';
         }
         //si un valeur est vide envoie d'une erreur
