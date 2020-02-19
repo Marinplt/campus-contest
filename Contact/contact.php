@@ -50,6 +50,7 @@
         <p>
             <label for="email"></label>
             <input class="formulaire" type="email" name="Email" id="email" placeholder="Adresse email" autofocus required />
+            <p>Nous n'utiliserons jamais votre adresse email sans votre accord. <a href="../mentions_legales.html">Mentions légales.</a></p>
         </p>
         <p>
             <textarea class="formulaire" id="message" name="Message" placeholder="Message" rows="5" cols="70" autofocus required></textarea>
