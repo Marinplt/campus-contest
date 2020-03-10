@@ -23,9 +23,9 @@
         crossorigin="anonymous"></script>
 
 
-    <div id="header">
-        <img id="logo" src="../images/logo marin.png" alt="Logo Marin Pollet">
-        <div id="menu">
+    <div class="header">
+        <img class="logo" src="../images/logo marin.png" alt="Logo Marin Pollet">
+        <div class="menu">
             <ul class="nav nav-pills nav-justified">
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html">Accueil</a>
@@ -42,7 +42,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../Contact/contact.php">Contact</a>
                 </li>
-                <li id="avis" class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="../Recommendations/recommendations.php">Recommendations</a>
                 </li>
             </ul>
@@ -86,15 +86,15 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div id="footer" class="fixed-bottom">
+    <div class="fixed-bottom footer">
         <a href="../index.html">
-            <img id="logofooter" src="../images/logo M blanc.png" alt="Logo M Marin Pollet">
+            <img class="logofooter" src="../images/logo M blanc.png" alt="Logo M Marin Pollet">
         </a>
         <a href="https://www.linkedin.com/in/marin-pollet-30b89b196">
-            <img id="linkedin" src="../images/linkedin.png" alt="Logo Linkedin">
+            <img class="linkedin" src="../images/linkedin.png" alt="Logo Linkedin">
         </a>
         <a href="https://www.campus.academy/">
-            <img id="campusacademy" src="../images/LOGO_CAMPUS_ACADEMY.png" alt="Logo Campus Academy">
+            <img class="campusacademy" src="../images/LOGO_CAMPUS_ACADEMY.png" alt="Logo Campus Academy">
         </a>
     </div>
     <?php

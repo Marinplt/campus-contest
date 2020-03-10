@@ -7,7 +7,7 @@
     font-family: 'Ubuntu', serif;
 }
 
-#logo {
+.logo {
     display: block;
     margin-top: 50px;
     margin-left: 50px;
@@ -16,23 +16,23 @@
     width: 253.50px;
 }
 
-#header {
+.header {
     margin: auto;
     margin-bottom: 10px;
     display: flex;
 }
 
-#menu {
+.menu {
     margin-top: 100px;
     margin-left: 150px;
     font-size: 20px;
 }
 
-#footer {
+.footer {
     height: 200px;
 }
 
-#logofooter {
+.logofooter {
     width: 99px;
     height: 77px;
     margin-top: 60px;
@@ -40,13 +40,13 @@
     margin-right: 50px;
 }
 
-#linkedin {
+.linkedin {
     width: 99px;
     height: 99px;
     margin-top: 60px;
     margin-left: 120px;
 }
-#campusacademy{
+.campusacademy{
     width: 99px;
     height: 99px;
     margin-top: 60px;
@@ -71,7 +71,7 @@ html {
     height: 100%;
 }
 
-#biographie {
+.biographie {
     color: white;
     margin-left: 370px;
     margin-right: 400px;
