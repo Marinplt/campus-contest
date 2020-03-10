@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="recommendations.css">
+    <link rel="stylesheet" href="recommandations.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="icon" href="../logo-marin.ico">
-    <title>Recommendations</title>
+    <title>Recommandations</title>
 </head>
 
 <body>
@@ -23,9 +23,9 @@
         crossorigin="anonymous"></script>
 
 
-    <div class="header">
-        <img class="logo" src="../images/logo marin.png" alt="Logo Marin Pollet">
-        <div class="menu">
+    <div id="header">
+        <img id="logo" src="../images/logo marin.png" alt="Logo Marin Pollet">
+        <div id="menu">
             <ul class="nav nav-pills nav-justified">
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html">Accueil</a>
@@ -43,7 +43,7 @@
                     <a class="nav-link" href="../Contact/contact.php">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../Recommendations/recommendations.php">Recommendations</a>
+                    <a class="nav-link" href="../Recommandations/recommandations.php">Recommendations</a>
                 </li>
             </ul>
         </div>
@@ -56,7 +56,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../images/space1.jpg" class="d-block w-100" alt="fond abstrait gris">
+                <img src="../images/space1.jpg" class="d-block w-100" alt="espace bleuté">
                 <div class="carousel-caption d-none d-md-block">
                     <h5><?php name1(); ?></h5>
                     <p><?php message1(); ?></p>
@@ -86,15 +86,15 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="fixed-bottom footer">
+    <div id="footer" class="fixed-bottom">
         <a href="../index.html">
-            <img class="logofooter" src="../images/logo M blanc.png" alt="Logo M Marin Pollet">
+            <img id="logofooter" src="../images/logo M blanc.png" alt="Logo M Marin Pollet">
         </a>
         <a href="https://www.linkedin.com/in/marin-pollet-30b89b196">
-            <img class="linkedin" src="../images/linkedin.png" alt="Logo Linkedin">
+            <img id="linkedin" src="../images/linkedin.png" alt="Logo Linkedin">
         </a>
         <a href="https://www.campus.academy/">
-            <img class="campusacademy" src="../images/LOGO_CAMPUS_ACADEMY.png" alt="Logo Campus Academy">
+            <img id="campusacademy" src="../images/LOGO_CAMPUS_ACADEMY.png" alt="Logo Campus Academy">
         </a>
     </div>
     <?php
