@@ -22,22 +22,22 @@
         <img id="logo" src="../images/logo marin.png" alt="Logo Marin Pollet">
         <div id="menu">
             <ul class="nav nav-pills nav-justified">
-                <li class="nav-item">
+                <li class="nav-item ubuntu">
                     <a class="nav-link" href="../index.html">Accueil</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ubuntu">
                     <a class="nav-link" href="../Experience/experience.html">Expérience</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ubuntu">
                     <a class="nav-link" href="../Parcours/parcours.html">Parcours</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ubuntu">
                     <a class="nav-link" href="../Compétences/competences.html">Compétences</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ubuntu">
                     <a class="nav-link" href="../Contact/contact.php">Contact</a>
                 </li>
-                <li id="avis" class="nav-item">
+                <li class="nav-item ubuntu">
                     <a class="nav-link" href="../Recommandations/recommandations.php">Recommandations</a>
                 </li>
             </ul>
@@ -52,6 +52,12 @@
             <label for="email"></label>
             <input class="formulaire" type="email" name="Email" id="email" placeholder="Adresse email" autofocus required />
             <p>Nous n'utiliserons jamais votre adresse email sans votre accord. <a href="../mentions_legales.html">Mentions légales.</a></p>
+            <div>
+                <input type="checkbox" aria-label="Checkbox for following text input">
+                <p class="ubuntu">Recommandation</p>
+                <input type="checkbox" aria-label="Checkbox for following text input">
+                <p class="ubuntu">Message</p>
+            </div>
         </p>
         <p>
             <textarea class="formulaire" id="message" name="Message" placeholder="Message" rows="5" cols="70" autofocus required></textarea>

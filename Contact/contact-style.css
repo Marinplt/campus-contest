@@ -28,6 +28,49 @@
     font-size: 20px;
 }
 
+#mail {
+    margin-left: 400px;
+    margin-right: 800px;
+}
+
+#envoyer {
+    color: white !important;
+    background-color: #303036;
+    padding: .5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    text-decoration: none;
+}
+
+#message {
+    resize: none;
+}
+
+.formulaire {
+    border-radius: 0.25rem;
+}
+
+#nom {
+    margin-left: -4px;
+    width: 300px;
+}
+
+#email {
+    margin-left: -4px;
+    width: 300px;
+}
+.checkbox-text{
+    
+}
+#cv_image {
+    width: 40px;
+    height: 40px;
+}
+
+#cv_download{
+    margin-left: 40px;
+}
+
 #footer {
     height: 200px;
 }
@@ -78,45 +121,4 @@ body {
 
 html {
     height: 100%;
-}
-
-#mail {
-    margin-left: 400px;
-    margin-right: 800px;
-}
-
-#envoyer {
-    color: white !important;
-    background-color: #303036;
-    padding: .5rem 1rem;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    text-decoration: none;
-}
-
-#message {
-    resize: none;
-}
-
-.formulaire {
-    border-radius: 0.25rem;
-}
-
-#nom {
-    margin-left: -4px;
-    width: 300px;
-}
-
-#email {
-    margin-left: -4px;
-    width: 300px;
-}
-
-#cv_image {
-    width: 40px;
-    height: 40px;
-}
-
-#cv_download{
-    margin-left: 40px;
 }
