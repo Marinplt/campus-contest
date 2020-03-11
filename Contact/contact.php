@@ -45,25 +45,24 @@
     </div>
     <form method="post" id="mail">
         <p>
+            <!-- nom et prénom -->
             <label for="prenom"></label>
             <input class="formulaire" type="text" name="Name" id="nom" placeholder="Nom et Prénom" autofocus required />
         </p>
         <p>
+            <!-- email -->
             <label for="email"></label>
             <input class="formulaire" type="email" name="Email" id="email" placeholder="Adresse email" autofocus required />
+            <!-- mentions légales -->
             <p>Nous n'utiliserons jamais votre adresse email sans votre accord. <a href="../mentions_legales.html">Mentions légales.</a></p>
-            <div id="divcheckbox">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Recommandation</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                    <label class="form-check-label" for="inlineRadio2">Contact</label>
-                </div>
-            </div>
         </p>
         <p>
+            <!-- type de message -->
+            <label for="type">Précisez Recommandation ou Message.</label>
+            <input class="formulaire" type="text" name="Type" id="type" autofocus required />
+        </p>
+        <p>
+            <!-- message -->
             <textarea class="formulaire" id="message" name="Message" placeholder="Message" rows="5" cols="70" autofocus required></textarea>
         </p>
         <input type="submit" value="Envoyer" id="envoyer">
@@ -107,8 +106,8 @@
         if (!empty($Name) and !empty($Email) and !empty($Message)) {
             //envoie des valeur dans la BDD
             $bdd->query('INSERT INTO formulaire (name, email, message) VALUES("' . $Name . '", "' . $Email . '", "' . $Message . '")') or die('Erreur:');
-            $pop = "Merci pour votre avis ! \n
-            Votre message risque d'être affiché dans la page Recommandation. \n
+            $pop = "Merci pour votre message ! \n
+            Si vous avez coché la case Recommandation, votre message risque d'être affiché dans la page Recommandation. \n
             Si vous ne voulez pas être affiché contactez moi via mon mail : marinplt@gmail.com";
             echo '<script type="text/javascript">window.alert("' . $pop . '");</script>';
         }
