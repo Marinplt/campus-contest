@@ -59,9 +59,11 @@
     margin-left: -4px;
     width: 300px;
 }
-.checkbox-text{
-    
+
+#divcheckbox{
+    width: 300px;
 }
+
 #cv_image {
     width: 40px;
     height: 40px;

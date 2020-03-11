@@ -52,11 +52,15 @@
             <label for="email"></label>
             <input class="formulaire" type="email" name="Email" id="email" placeholder="Adresse email" autofocus required />
             <p>Nous n'utiliserons jamais votre adresse email sans votre accord. <a href="../mentions_legales.html">Mentions légales.</a></p>
-            <div>
-                <input type="checkbox" aria-label="Checkbox for following text input">
-                <p class="ubuntu">Recommandation</p>
-                <input type="checkbox" aria-label="Checkbox for following text input">
-                <p class="ubuntu">Message</p>
+            <div id="divcheckbox">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Recommandation</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Contact</label>
+                </div>
             </div>
         </p>
         <p>
