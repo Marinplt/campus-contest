@@ -46,12 +46,14 @@
     margin-top: 60px;
     margin-left: 120px;
 }
-.campusacademy{
+
+.campusacademy {
     width: 99px;
     height: 99px;
     margin-top: 60px;
     margin-left: 80px;
 }
+
 body {
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     background-size: 100%;
@@ -85,4 +87,64 @@ html {
 
 .Lightblue {
     color: #6587AB;
+}
+
+/* .competences {
+    margin-left: 310px !important;
+    margin-right: 500px !important;
+} */
+
+.list-group {
+    margin-left: 370px;
+}
+
+.mail {
+    margin-left: 400px;
+    margin-right: 800px;
+}
+
+.envoyer {
+    color: white !important;
+    background-color: #303036;
+    padding: .5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    text-decoration: none;
+}
+
+.message {
+    resize: none;
+}
+
+.formulaire {
+    border-radius: 0.25rem;
+}
+.nom {
+    margin-left: -4px;
+    width: 300px;
+}
+
+.email {
+    margin-left: -4px;
+    width: 300px;
+}
+
+.type {
+    width: 300px;
+    display: block;
+}
+
+.cv_image {
+    width: 40px;
+    height: 40px;
+}
+
+.cv_download {
+    margin-left: 40px;
+}
+.logogit {
+    width: 99px;
+    height: 90px;
+    margin-top: 60px;
+    margin-left: 90px;
 }

@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="comp-style.css">
+    <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="../logo-marin.ico"/>
+    <link rel="icon" type="image/png" href="../images/logo M blanc.png" />
     <title>Compétences</title>
 </head>
 
@@ -23,9 +24,9 @@
         crossorigin="anonymous"></script>
 
 
-    <div id="header">
-        <img id="logo" src="../images/logo marin.png">
-        <div id="menu">
+    <div class="header">
+        <img class="logo" src="../images/logo marin.png">
+        <div class="menu">
             <ul class="nav nav-pills nav-justified">
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html">Accueil</a>
@@ -48,56 +49,62 @@
             </ul>
         </div>
     </div>
-    <div id="competences" class="row">
-        <div class="col-4">
-            <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active bg-transparent text-white" id="list-home-list"
-                    data-toggle="list" href="#list-home" role="tab" aria-controls="home">Languages (parlés et
-                    informatique)</a>
-                <a class="list-group-item list-group-item-action bg-transparent text-white" id="list-profile-list"
-                    data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Divers</a>
-                <a class="list-group-item list-group-item-action bg-transparent text-white" id="list-messages-list"
-                    data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Sports pratiqués</a>
-                <a class="list-group-item list-group-item-action bg-transparent text-white" id="list-settings-list"
-                    data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Centres d'inérêts</a>
+    <div class="container">
+        <div class="competences row">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active bg-transparent text-white" id="list-home-list"
+                        data-toggle="list" href="#list-home" role="tab" aria-controls="home">Languages (parlés et
+                        informatique)</a>
+                    <a class="list-group-item list-group-item-action bg-transparent text-white" id="list-profile-list"
+                        data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Divers</a>
+                    <a class="list-group-item list-group-item-action bg-transparent text-white" id="list-messages-list"
+                        data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Sports pratiqués</a>
+                    <a class="list-group-item list-group-item-action bg-transparent text-white" id="list-settings-list"
+                        data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Centres d'inérêts</a>
+                </div>
             </div>
-        </div>
-        <div class="col-8">
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                    -Anglais <br>
-                    -Espagnol <br>
-                    -HTML, CSS, PHP <br>
-                    -JavaScript <br>
-                    -SQL <br>
-                    -C, C++
-                </div>
-                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                    -Montage/démontage d'ordinateurs fixes <br>
-                    -Photoshop <br>
-                    -Powerpoint
-                </div>
-                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                    -Tir à l'arc <br>
-                    -Golf
-                </div>
-                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-                    -Cinéma <br>
-                    -Nouvelles technologies <br>
-                    -Robotique
+            <div class="col-8">
+                <div class="tab-content nav-tabContent">
+                    <div class="tab-pane fade show active text-white" id="list-home" role="tabpanel"
+                        aria-labelledby="list-home-list">
+                        -Anglais <br>
+                        -Espagnol <br>
+                        -HTML, CSS, PHP <br>
+                        -JavaScript <br>
+                        -SQL <br>
+                        -C, C++
+                    </div>
+                    <div class="tab-pane fade text-white" id="list-profile" role="tabpanel"
+                        aria-labelledby="list-profile-list">
+                        -Montage/démontage d'ordinateurs fixes <br>
+                        -Photoshop <br>
+                        -Powerpoint
+                    </div>
+                    <div class="tab-pane fade text-white" id="list-messages" role="tabpanel"
+                        aria-labelledby="list-messages-list">
+                        -Tir à l'arc <br>
+                        -Golf
+                    </div>
+                    <div class="tab-pane fade text-white" id="list-settings" role="tabpanel"
+                        aria-labelledby="list-settings-list">
+                        -Cinéma <br>
+                        -Nouvelles technologies <br>
+                        -Robotique
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="footer" class="fixed-bottom">
+    <div class="footer fixed-bottom">
         <a href="../index.html">
-            <img id="logofooter" src="../images/logo M blanc.png" alt="Logo Marin">
+            <img class="logofooter" src="../images/logo M blanc.png" alt="Logo Marin">
         </a>
         <a href="https://www.linkedin.com/in/marin-pollet-30b89b196">
-            <img id="linkedin" src="../images/linkedin.png" alt="Logo Linkedin">
+            <img class="linkedin" src="../images/linkedin.png" alt="Logo Linkedin">
         </a>
         <a href="https://www.campus.academy/">
-            <img id="campusacademy" src="../images/LOGO_CAMPUS_ACADEMY.png" alt="Logo Campus Academy">
+            <img class="campusacademy" src="../images/LOGO_CAMPUS_ACADEMY.png" alt="Logo Campus Academy">
         </a>
     </div>
 </body>
